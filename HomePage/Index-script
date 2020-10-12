@@ -1,0 +1,11 @@
+// JavaScript Document
+
+// Top mobile nav variables
+const toggleBTN = document.getElementById('jsNavToggle');
+const mobileNav = document.getElementById('jsNavMenu');
+
+// Top toggle button event listener for mobile nav
+toggleBTN.addEventListener('click', function(){
+	mobileNav.classList.toggle('active');
+})
+
