@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="dog adoption, cat adoption, bunny adoption, San Diego pet adoption">
+<meta name="description" content="Find available pets for adoption in San Diego at Daisy Hill Animal Shelter">
+<link rel="stylesheet" type="text/css" href="Daisy Hill Home Page Stylesheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<title>Daisy Hill Animal Shelter Home Page</title>
+</head>
+
+<body>
+<div class="mobileNav">
+  <div class="hamburgerMenu" id="jsNavToggle"><img class="hamburgerIcon" src="Assets/Hamburger Menu Icon.svg" alt="mobile nav menu"> </div>
+  <div class="mobileBrand"><a href="#"><img class="logo" src="Assets/Daisy Hill Logo.png" alt="Daisy Hill Logo"></a> <a href="#">Daisy Hill Animal Shelter</a> </div>
+</div>
+<nav class="navBar">
+  <div class="navLeft">
+    <div class="brand"> <a href="#"><img class="logo" src="Assets/Daisy Hill Logo.png" alt="Daisy Hill Logo"></a> <a href="#">Daisy Hill Animal Shelter</a> </div>
+  </div>
+  <div class="navRight" id="jsNavMenu">
+    <div class="navRightLinks"> <a href="#">Available Adoptions</a> <a href="#">Services</a> <a href="#">Events</a> <a href="#">About Us</a> </div>
+  </div>
+</nav>
+<main>
+<div class="container">
+  <div class="sidebar">
+    <div class="sidebarContent">
+    <div class="heroTitle">
+<h1>Find Your New Fur Baby</h1>
+</div>
+<div class="subTitle">
+  <h2>Search Available Animals for Adoption in San Diego</h2>
+</div>
+<div class="callToActionBTN">
+<a href="#"><button class="heroBTN">Here</button></a>
+</div>
+</div>
+  </div>
+  <div class="midcontainer">
+    <div class="maincontent">
+    </div>
+  </div>
+  <div class="aside">
+    <div class="asidecontent">
+    </div>
+  </div>
+  <img class="mobileBackground" src="Assets/Daisy Hill Background Image.jpg" alt="background image">
+  <div class="videocontainer">
+<video class="videoBG" autoplay muted loop poster="Assets/Daisy Hill Background Image.jpg">
+  <source src="Assets/video.mp4" type="video/mp4">
+  </video>
+  </div>
+</div>
+</main>
+<footer>
+    <div class="signupFormContainer">
+      <p>Sign Up for Notifications</p>
+      <form class="signupForm"><input class="signupField" type="email" placeholder="email address..."><input class="signupBTN" type="submit"></form>
+    </div>
+    <div class="footerLinks">
+      <div class="siteMap">
+        <div class="siteMapNav">
+        <div class="plusIconSiteMap"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIconSiteMap"><img src="Assets/minus icon.svg" alt="collapse menu"></div><small>Site Map</small>
+        <ul>
+        <li><a href="#">Available Adoptions</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      </div><!---- closing div tag for site map links nav container -->
+      </div><!---- closing div tag for site map links container -->
+      <div class="resources">
+        <div class="resourcesNav">
+          <div class="plusIconResources"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIconResources"><img src="Assets/minus icon.svg" alt="collapse menu"></div><small>Resources</small>
+          <ul>
+            <li><a href="#">Foster</a></li>
+            <li><a href="#">Lost and Found</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Donations</a></li>
+          </ul>
+    </div><!---- closing div tag for resources links nav container -->
+      </div><!---- closing div tag for resources links container -->
+      <div class="company">
+      <div class="companyNav">
+        <div class="plusIconCompany"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIconCompany"><img src="Assets/minus icon.svg" alt="collapse menu"></div><small>Company</small>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+  </div><!---- closing div tag for company links nav container -->
+    </div><!---- closing div tag for company links container -->
+  </div><!---- closing div tag for footer links container -->
+
+</footer>
+</body>
+<script src="Daisy Hill Javascript.js"></script>
+</html>
