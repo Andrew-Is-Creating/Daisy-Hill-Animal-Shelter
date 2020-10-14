@@ -47,22 +47,19 @@
     </div>
   </div>
   <img class="mobileBackground" src="Assets/Daisy Hill Background Image.jpg" alt="background image">
-  <div class="videocontainer">
-<video class="videoBG" autoplay muted loop poster="Assets/Daisy Hill Background Image.jpg">
-  <source src="Assets/video.mp4" type="video/mp4">
-  </video>
-  </div>
 </div>
 </main>
 <footer>
-    <div class="signupFormContainer">
+    <div class="signupFormGrid">
+      <div class="signupFormFlex">
       <p>Sign Up for Notifications</p>
-      <form class="signupForm"><input class="signupField" type="email" placeholder="email address..."><input class="signupBTN" type="submit"></form>
+      <form class="signupForm"><input class="signupField" type="email" placeholder="email address..."><input class="signupBTN" type="submit" value="submit"></form>
+    </div>
     </div>
     <div class="footerLinks">
       <div class="siteMap">
         <div class="siteMapNav">
-        <div class="plusIconSiteMap"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIconSiteMap"><img src="Assets/minus icon.svg" alt="collapse menu"></div><small>Site Map</small>
+        <div class="plusIconSiteMap"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIcon"><img src="Assets/minus icon.svg" alt="collapse menu"></div><P>Site Map</p>
         <ul>
         <li><a href="#">Available Adoptions</a></li>
         <li><a href="#">Services</a></li>
@@ -73,7 +70,7 @@
       </div><!---- closing div tag for site map links container -->
       <div class="resources">
         <div class="resourcesNav">
-          <div class="plusIconResources"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIconResources"><img src="Assets/minus icon.svg" alt="collapse menu"></div><small>Resources</small>
+          <div class="plusIconResources"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIcon"><img src="Assets/minus icon.svg" alt="collapse menu"></div><p>Resources</p>
           <ul>
             <li><a href="#">Foster</a></li>
             <li><a href="#">Lost and Found</a></li>
@@ -84,7 +81,7 @@
       </div><!---- closing div tag for resources links container -->
       <div class="company">
       <div class="companyNav">
-        <div class="plusIconCompany"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIconCompany"><img src="Assets/minus icon.svg" alt="collapse menu"></div><small>Company</small>
+        <div class="plusIconCompany"><img class="plusIcon" src="Assets/plus icon.svg" alt="expand menu"></div><div class="minusIcon"><img src="Assets/minus icon.svg" alt="collapse menu"></div><p>Company</p>
         <ul>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Press</a></li>
@@ -94,8 +91,25 @@
   </div><!---- closing div tag for company links nav container -->
     </div><!---- closing div tag for company links container -->
   </div><!---- closing div tag for footer links container -->
-
+  <div class="footerBrand">
+    <p>Daisy Hill Animal Shelter</p>
+  </div>
+  <div class="copyrightContainer">
+    <div class="copyright">
+    <img class="copyrightIcon" src="Assets/copyright icon.png" alt="copyright"><p>Copyright 2020</p>
+    </div>
+  </div>
+  <div class="socialMediaContainer">
+    <div class="socialMediaLinks">
+      <a href="https://www.facebook.com/"><img class="facebookIcon" src="Assets/Facebook Icon.png" alt="facebook"></a>
+      <a href="https://www.twitter.com/"><img class="twitterIcon" src="Assets/Twitter Icon.png" alt="twitter"></a>
+      <a href="https://www.instagram.com/"><img class="instagramIcon" src="Assets/Instagram Icon.png" alt="instagram"></a>
+    </div>
+  </div>
 </footer>
+<video class="videoBG" autoplay muted loop poster="Assets/Daisy Hill Background Image.jpg">
+  <source src="Assets/video.mp4" type="video/mp4">
+  </video>
 </body>
 <script src="Daisy Hill Javascript.js"></script>
 </html>
