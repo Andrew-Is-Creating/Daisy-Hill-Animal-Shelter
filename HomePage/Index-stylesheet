@@ -59,21 +59,21 @@ main {
 }
 .container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit minmax(200px, 1fr) );
 	grid-gap: 0;
 	grid-auto-rows: minmax(300px, auto);
 
 }
 .sidebar {
 	display: grid;
-	grid-column: 1 / 2;
+	grid-column: 1;
 	grid-row: 1 / 3;
+	justify-content: start;
 }
 .sidebarContent {
 	display: flex;
-	flex: 0.5 1;
+	flex: 1 1;
 	flex-flow: column nowrap;
-	justify-content: flex-start;
 	animation: 4s intro forwards;
 }
 @keyframes intro {
@@ -87,7 +87,7 @@ main {
 	font-family: 'Roboto';
 	font-size: 36px;
 	font-weight: 700;
-	margin: 140px 0 0 80px;
+	margin: 100px 10px 0 80px;
 }
 .subTitle {
 	display: flex;
@@ -97,12 +97,10 @@ main {
 	font-style: italic;
 	font-weight: 400;
 	margin-left: 80px;
-
+	width: 350px;
 }
 .callToActionBTN {
 	display: flex;
-	flex: 0 1 180px;
-	justify-content: flex-end;
 }
 .heroBTN {
 	width: 70px;
@@ -116,6 +114,7 @@ main {
 	font: 18px 'Raleway';
 	text-transform: uppercase;
 	color: rgb(34, 69, 119);
+	margin-left: 80px;
 }
 .heroBTN:hover {
 	cursor: pointer;
@@ -143,9 +142,10 @@ main {
 /* Footer content */
 footer {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 0;
-	grid-auto-rows: minmax(100px, auto);
+	grid-template-columns: repeat(auto-fit minmax(6, 1fr));
+	grid-auto-rows: repeat(auto-fit minmax(200px, 1fr));
+	height: 40vh;
+	width: 100vw;
 	font-family: 'Raleway';
 	background-color: #224577;
 	color: #fff;
@@ -159,15 +159,16 @@ footer a {
 }
 .signupFormGrid {
 	display: grid;
-	grid-column: 3 / 4;
+	grid-column: 1 / 4;
 	grid-row: 1;
+	justify-content: center;
 }
 .signupFormFlex {
 	display: flex;
 	flex: 1 1;
 	flex-flow: column nowrap;
 	align-items: center;
-	margin: 20px 0 20px 0;
+	width: 400px;
 }
 .signupForm {
 	display: flex;
@@ -196,8 +197,9 @@ footer a {
 }
 .footerLinks {
 	display: grid;
-	grid-column: 2 / 5;
+	grid-column: 1 / 4;
 	grid-row: 2;
+	justify-content: space-evenly;
 }
 .siteMap {
 	display: grid;
@@ -238,25 +240,30 @@ footer a {
 .companyNav p {
 	margin: 10px 0 0 37px;
 }
+.bottomfooter {
+	display: grid;
+	grid-column: 1 / 4;
+	grid-row: 3;
+	justify-content: space-evenly;
+}
 .footerBrand {
 	display: grid;
-	grid-column: 2;
+	grid-column: 1 / 2;
 	grid-row: 3;
-}
-.footerBrand p {
-	margin-left: 37px;
+	align-content: center;
 }
 .copyrightContainer {
 	display: grid;
-	grid-column: 3;
+	grid-column: 2 / 3;
 	grid-row: 3;
+	align-content: center;
 }
 .copyright {
 	display: flex;
 	flex-flow: row nowrap;
 	font-family: 'Open Sans';
+	font-size: 14px;
 	align-items: center;
-	margin: 0 0 50px 37px;
 }
 .copyrightIcon {
 	width: 15px;
@@ -265,14 +272,15 @@ footer a {
 }
 .socialMediaContainer {
 	display: grid;
-	grid-column: 4;
+	grid-column: 3 / 4;
 	grid-row: 3;
+	justify-content: start;
 }
 .socialMediaLinks {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	margin: 0 0 50px 40px;
+	/*margin: 0 170px 50px 40px;*/
 }
 .facebookIcon {
 	width: 15px;
@@ -318,16 +326,18 @@ cursor: pointer;
 	object-fit: cover;
 	position: absolute;
 	z-index: -1000;
-	height: 100vh;
+	height: 83vh;
 	width: 100vw;
-	top: 0;
+	top: 5;
 	left: 0;
+	bottom: 0;
 }
 .mobileBackground {
 	display: none;
 }
 
 @media screen and (max-width: 767px){
+	/* Nav Content*/
 	.mobileNav {
 		display: flex;
 		flex-flow: row nowrap;
@@ -388,7 +398,10 @@ cursor: pointer;
 	.active {
 		display: flex; /*class used for JS toggle*/
 	}
-
+	/*Main Content */
+	.sidebarContent {
+		justify-content: flex-start;
+	}
 	.heroTitle {
 		font-size: 18px;
 	}
@@ -402,6 +415,96 @@ cursor: pointer;
 		border-radius: 2px;
 		border: 1.8px solid rgb(34, 69, 119);
 	}
+	/* Footer */
+	footer {
+		height: 40vh;
+	}
+	.signupFormFlex {
+		margin: 20px 0 50px 0;
+	}
+	.siteMapLinks {
+		display: none;
+	}
+	.resourcesLinks {
+		display: none;
+	}
+	.companyLinks {
+		display: none;
+	}
+	.footerLinks {
+		display: flex;
+		flex-flow: column nowrap;
+		margin-left: 10px;
+	}
+	.siteMapNav {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.siteMapNav p {
+		margin: 0 0 1px 10px;
+	}
+	.resourcesNav {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.resourcesNav p {
+		margin: 0 0 1px 10px;
+	}
+	.companyNav {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.companyNav p {
+		margin: 0 0 1px 10px;
+	}
+	.plusIcon {
+		display: flex;
+		height: 12px;
+		width: 12px;
+	}
+	.minusIcon {
+		height: 12px;
+		width: 12px;
+	}
+	.bottomFooter {
+		grid-column: 1 /3;
+	}
+	.footerBrand {
+		align-content: end;
+		font-size: 14px;
+		margin-right: 55px;
+	}
+	.copyrightContainer {
+		align-content: end;
+		margin-right: 100px;
+	}
+	.socialMediaLinks {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.facebookIcon {
+		height: 15px;
+		width: 9px;
+	}
+	.twitterIcon {
+		height: 20px;
+		width: 12px;
+		margin-left: 10px;
+	}
+	.instagramIcon {
+		height: 12px;
+		width: 12px;
+		margin-right: 30px;
+	}
+
+	/* Background */
 	.mobileBackground {
 		display: flex;
 		position: absolute;
